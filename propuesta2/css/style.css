@@ -112,7 +112,7 @@ body {
 }
 
 .about {
-  padding: 0 12rem 12rem 7%;
+  padding: 0 12rem;
 
 }
 .about .row {
@@ -267,7 +267,8 @@ body {
 }
 .contact .row {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
   justify-content: center;
   background-color: #0a0a17;
 }
@@ -461,4 +462,18 @@ body {
   .contact .row h3 {
     font-size: 2.5rem;
   }
+}
+
+@media (max-width: 550px) {
+    .contact {
+      padding: 0 1rem;
+    }
+
+    .review .box-container {
+      padding: 0 1rem;
+    }
+
+    .about {
+      padding: 0 1rem;
+    }
 }
